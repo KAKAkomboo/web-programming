@@ -107,11 +107,11 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     animation: wiggle 1s ease-in-out infinite;
     cursor: pointer;
-    list-style: none; /* Remove default arrow */
+    list-style: none;
 }
 
 .module-section summary::-webkit-details-marker {
-    display: none; /* Hide default marker in WebKit browsers */
+    display: none;
 }
 
 .module-section summary h2 {
