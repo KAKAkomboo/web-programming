@@ -107,11 +107,11 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     animation: wiggle 1s ease-in-out infinite;
     cursor: pointer;
-    list-style: none; 
+    list-style: none; /* Remove default arrow */
 }
 
 .module-section summary::-webkit-details-marker {
-    display: none;
+    display: none; /* Hide default marker in WebKit browsers */
 }
 
 .module-section summary h2 {
@@ -183,4 +183,74 @@ ul {
     0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
     40% { transform: translateY(-10px); }
     60% { transform: translateY(-5px); }
+}
+
+@media (max-width: 768px) {
+    .main-block {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .header-cat {
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    .block-with-homework {
+        padding: 20px;
+    }
+
+    .block-with-homework h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .module-section summary {
+        padding: 16px;
+    }
+
+    .module-cat {
+        width: 60px;
+    }
+
+    .homework-button {
+        font-size: 16px;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        padding: 12px;
+    }
+
+    .floating-cat, .floating-cat2 {
+        display: none; 
+    }
+
+    .absurd-footer {
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .block-with-homework h1 {
+        font-size: 24px;
+    }
+
+    .module-section summary h2 {
+        font-size: 18px;
+    }
+
+    .homework-button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .module-cat {
+        width: 50px;
+    }
 }
