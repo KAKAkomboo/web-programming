@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://i.pinimg.com/1200x/86/f4/43/86f44340d995fcdca3b2a8a937d4f4ae.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.register-section {
+    background: rgba(25, 24, 24, 0.179);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.register-section h1 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+button {
+    background-color: rgb(208, 48, 20);
+    border: 0;
+    padding: 12px;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 12px;
+    color: white;
+}

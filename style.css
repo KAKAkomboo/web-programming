@@ -9,6 +9,7 @@ body {
     background-size: cover;
     font-family: 'Tiny5', sans-serif;
     overflow-x: hidden;
+    cursor: url('cursor/Pixel-Pug-Normal.cur'), auto;
 }
 
 .floating-cat, .floating-cat2 {
@@ -184,6 +185,15 @@ ul {
     40% { transform: translateY(-10px); }
     60% { transform: translateY(-5px); }
 }
+
+a:hover {
+   cursor: url('cursor/Pixel-Pug-Link.cur'), pointer; 
+}
+
+.module-section summary:hover {
+    cursor: url('cursor/Pixel-Pug-Link.cur'), pointer;
+}
+
 
 @media (max-width: 768px) {
     .main-block {
