@@ -27,8 +27,12 @@
                 <label for="date">Date of birth:</label>
                 <input type="date" name="date" required>
 
-                <label for="sex">Sex</label>
-                <input type="radio" name="femail">
+                <label for="sex" class="sex-label">Sex:</label>
+                <div class="sex-choice centered-sex">
+                    <label><input type="radio" name="sex" value="male" required> Male</label>
+                    <label><input type="radio" name="sex" value="female"> Female</label>
+                </div>
+
 
                 <div class="agreement">
                     <input type="checkbox" name="agree" required>

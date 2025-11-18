@@ -46,3 +46,14 @@ button {
     border-radius: 12px;
     color: white;
 }
+
+.centered-sex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.sex-label {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
