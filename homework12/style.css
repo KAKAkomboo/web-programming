@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: pink;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #cccccc;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.3s;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: palevioletred;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: rgb(190, 83, 118);
+}
+
+input.success {
+    border-color: green;
+}
+
+input.error {
+    border-color: red;
+}
+
+#error {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+#success {
+    color: green;
+    font-weight: bolder;
+    display: none;
+}
