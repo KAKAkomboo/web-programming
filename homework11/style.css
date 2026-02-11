@@ -1,0 +1,29 @@
+body {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body.dark {
+    background-image: url('https://t3.ftcdn.net/jpg/05/92/28/78/360_F_592287869_W3B3PRUv7assJu1CtienhxePe737foGW.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 24px;
+    background-color: pink;
+    border: none;
+    border-radius: 24px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(164, 56, 74);
+}

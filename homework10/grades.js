@@ -5,27 +5,36 @@ let students = [
     {name: "Bogdan", grade: 20, age: 17},
 ]
 
-let grade = null;
-let studName = "";
-let a = [];
-sumGrade = null;
-av = null;
+let maxGrade = 0;
+let bestStudentName = "";
+let sumGrade = 0;
+
+const tabBody = document.querySelector(".student-list-body");
+const bestStudent = document.querySelector(".best-student-info");
+const avarageScore = document.querySelector(".avarage-score-info");
+
 
 for (let s of students) {
-    console.log(s.name, "(", s.age, "years old", ") -", s.grade)
-}
+    tabBody.innerHTML += `
+        <tr>
+            <td>${s.name}</td>
+            <td>${s.age}</td>
+            <td>${s.grade}</td>
+        </tr>
+    `;
 
-for (let s of students) {
     sumGrade += s.grade;
 
-    if (s.grade > grade) {
-        grade = s.grade;
-        studName = s.name;
+    if (s.grade > maxGrade) {
+        maxGrade = s.grade;
+        bestStudent = s.name;
     }
 }
 
-av = sumGrade / students.length
+let av = sumGrade / students.length;
 
-console.log("Student", studName, "has highest score -", grade)
+bestStudent.innerHTML = `Best student: ${bestStudentName}. Score: ${maxGrade}`;
+avarageScore.innerHTML = `Avarage score: ${av}`;
 
-console.log("Avarage score is", av)
+console.log("Best result:", bestStudentName, maxGrade);
+console.log("Avarage score:", av);

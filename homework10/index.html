@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Dashboard</title>
+    </style>
 </head>
 <body>
+    <main class="main-container">
+        <aside class="sidebar">
+            <section class="content-section">
+                <h2 class="section-title">Список студентів</h2>
+
+                <table class="student-table">
+                    <thead class="table-header">
+                        <tr>
+                            <th>Ім'я</th>
+                            <th>Вік</th>
+                            <th>Бал</th>
+                        </tr>
+                    </thead>
+                    <tbody class="student-list-body">
+                        </tbody>
+                </table>
+            </section>
+
+            <section class="content-section conclusion-box">
+                <h2 class="section-title">Підсумок</h2>
+                <p class="best-student-info info-text"></p>
+                <p class="average-score-info info-text"></p>
+            </section>
+        </aside>
+    </main>
     <script src="grades.js"></script>
 </body>
 </html>
